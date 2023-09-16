@@ -6,7 +6,7 @@ const UsersController = require("../controllers/UsersController");
 
 
 function myMiddleware(req, res, next){
-    console.log("bateu aqui")
+
     if(!req.body.isAdmin){
         return res.json({message: "user unauthorized"})
     }
